@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/css.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+           <img src="../img/Black Minimalist typography brand Fashion Logo.png">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index .html">الصفحة الرئيسية</a></li>
+                <li><a href="../Pages/Products.html">المنتجات</a></li>
+                <li><a href="../Pages/Vendors Page.html">التجار</a></li>
+                <li><a href="../Pages/Contact Us.html">اتصل بنا</a></li>
+                <li><a href="../Pages/My Account.html">حسابي</a></li>
+                <li><a href="../Pages/addToCart.html" id="cart-icon"><i class="fas fa-shopping-cart"></i> سلة التسوق<span id="cart-counter"></span></a></li>
+                
+                
+            </ul>
+            
+        </nav>
+    </header>
+    <section class="my-account">
+        <h2>حسابي</h2>
+        <div class="account-info">
+            <h3>معلومات الحساب</h3>
+            <p><strong>الاسم:</strong> كرم جبر</p>
+            <p><strong>البريد الإلكتروني:</strong>abua33012@gmail.com </p>
+            <p><strong>الهاتف:</strong> 963996369002+</p>
+        </div>
+        <div class="orders">
+            <h3>الطلبات</h3>
+            <ul id="order-list">
+                <!-- ستضاف المنتجات هنا -->
+            </ul>
+        </div>
+        <div class="settings">
+            <h3>الإعدادات</h3>
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="name">الاسم:</label>
+                    <input type="text" id="name" name="name" value="كرم جبر" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">البريد الإلكتروني:</label>
+                    <input type="email" id="email" name="email" value="abua33012@gmail.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">كلمة المرور الحالية:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="form-group">
+                    <label for="new-password">كلمة المرور الجديدة:</label>
+                    <input type="password" id="new-password" name="new-password">
+                </div>
+                <button type="submit">حفظ التغييرات</button>
+            </form>
+        </div>
+    </section>
+
+
+
+    <script>
+     document.addEventListener('DOMContentLoaded', function() {
+    const orderList = document.getElementById('order-list');
+    const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+
+    if (cartItems.length === 0) {
+        const emptyMessage = document.createElement('p');
+        emptyMessage.textContent = 'لم تختر أي منتج';
+        orderList.appendChild(emptyMessage);
+    } else {
+        cartItems.forEach(item => {
+            const listItem = document.createElement('li');
+            listItem.innerHTML = `
+                <a href="#">${item.name}</a>
+                <span>السعر: ${item.price}</span>
+            `;
+            orderList.appendChild(listItem);
+        });
+    }
+});
+    </script>
+
+
+</body>
+</html>

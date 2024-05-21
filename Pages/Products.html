@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/css.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../img/Black Minimalist typography brand Fashion Logo.png">
+         </div>
+        <nav>
+            <ul>
+                <li><a href="../index .html">الصفحة الرئيسية</a></li>
+                <li><a href="../Pages/Products.html">المنتجات</a></li>
+                <li><a href="../Pages/Vendors Page.html">التجار</a></li>
+                <li><a href="../Pages/Contact Us.html">اتصل بنا</a></li>
+                <li><a href="../Pages/My Account.html">حسابي</a></li>
+                <li><a href="../Pages/addToCart.html" id="cart-icon"><i class="fas fa-shopping-cart"></i> سلة التسوق<span id="cart-counter"></span></a></li>
+                
+                
+            </ul>
+            
+        </nav>
+    </header>
+    <p id="confirmation-message" style="display: none;">تمت إضافة المنتج إلى السلة</p>
+
+    <main>
+        <section class="filters">
+            <h2>تصفية المنتجات</h2>
+            <label for="category">الفئة:</label>
+            <select id="category">
+                <option value="all">جميع الفئات</option>
+                <option value="electronics">إلكترونيات</option>
+                <option value="clothing">ملابس</option>
+                <option value="home-garden">اكسسوارات</option>
+            </select>
+
+            <label for="price">السعر:</label>
+            <input type="range" id="price" min="0" max="1000" step="10">
+            <span id="price-value">0</span>$
+
+            <input type="text" id="search" placeholder="بحث عن المنتجات...">
+        </section>
+
+        <section class="product-list">
+            <h2>المنتجات</h2>
+            <div id="products-container">
+              
+
+                <!-- المنتجات ستظهر هنا -->
+            </div>
+        </section>
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="../js/products.js"></script>
+</body>
+</html>
