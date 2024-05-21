@@ -90,21 +90,21 @@ showNextAnnouncements();
 // Products for each category
 const products = {
     electronics: [
-        { name: 'لابتوب', price: '$1000', image: '../img/Yellow Geometric Electronic Sale Facebook Post.png' },
-        { name: 'هيدفون&هاتف ذكي', price: '$800', image: '../img/Beige Electronic Sale Facebook Post.png' },
-        { name: 'لابتوب', price: '$1000', image: '../img/Blue And Violet Modern New Product Facebook Post.png' },
+        { name: 'لابتوب', price: '$1000', image: '/img/Yellow Geometric Electronic Sale Facebook Post.png' },
+        { name: 'هيدفون&هاتف ذكي', price: '$800', image: '/img/Beige Electronic Sale Facebook Post.png' },
+        { name: 'لابتوب', price: '$1000', image: '/img/Blue And Violet Modern New Product Facebook Post.png' },
 
        //Add more products here
     ],
     clothing: [
-        { name: 'قميص اطفال', price: '$50', image: '../img/Green and Orange Modern Fashion Business Instagram Post.png' },
-        { name: 'بنطال نسائي', price: '$80' , image: '../img/Clothing Sale Instagram Post.png'},
-        { name: 'قميص رجالي', price: '$50', image: '../img/Green and Orange Modern Fashion Business Instagram Pos1t.png' },
+        { name: 'قميص اطفال', price: '$50', image: '/img/Green and Orange Modern Fashion Business Instagram Post.png' },
+        { name: 'بنطال نسائي', price: '$80' , image: '/img/Clothing Sale Instagram Post.png'},
+        { name: 'قميص رجالي', price: '$50', image: '/img/Green and Orange Modern Fashion Business Instagram Pos1t.png' },
         //Add more products here
     ],
     'home-garden': [
-        { name: 'مكياجات', price: '$50', image: '../img/22222222222222.png' },
-        { name: 'اسوارة', price: '$30', image: '../img/3232323.png' },
+        { name: 'مكياجات', price: '$50', image: '/img/22222222222222.png' },
+        { name: 'اسوارة', price: '$30', image: '/img/3232323.png' },
       //Add more products here
     ]
 };
