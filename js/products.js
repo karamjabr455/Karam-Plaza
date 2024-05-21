@@ -1,4 +1,4 @@
-// بيانات المنتجات (يمكنك استبدال هذه البيانات ببيانات حقيقية من قاعدة بيانات)
+
 const productList = [
     { name: 'لابتوب', price: 1000, category: 'electronics', image: '../img/Blue And Violet Modern New Product Facebook Post.png', reviews: [{ rating: 4, comment: 'جيد جدًا' }, { rating: 5, comment: 'ممتاز' }] },
     { name: 'هاتف ذكي', price: 800, category: 'electronics', image: '../img/Beige Electronic Sale Facebook Post.png', reviews: [{ rating: 3, comment: 'متوسط' }, { rating: 4, comment: 'جيد' }] },
